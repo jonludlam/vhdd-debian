@@ -1,0 +1,34 @@
+--- a/vhd/Makefile
++++ b/vhd/Makefile
+@@ -71,8 +71,8 @@
+ 	$(OCAMLOPT) $(COMPFLAG) $(LINKFLAG) -o $@ $(OBJS)
+ 
+ install : vhdd
+-	mkdir -p $(DESTDIR)/opt/xensource/libexec
+-	cp vhdd $(DESTDIR)/opt/xensource/libexec
++	mkdir -p $(DESTDIR)/usr/sbin
++	cp vhdd $(DESTDIR)/usr/sbin
+ 
+ .SUFFIXES: .ml .mli .cmo .cmi .cmx
+ 
+--- a/vcli/Makefile
++++ b/vcli/Makefile
+@@ -75,15 +75,9 @@
+ 	rm -f *.cmx *.cmi *.cmo *.a *.o vcli *~ *.annot
+ 
+ install : vcli
+-	mkdir -p $(DESTDIR)/opt/xensource/debug
+-	cp vcli $(DESTDIR)/opt/xensource/debug
+-	mkdir -p $(DESTDIR)/var/xapi/sm/
+-	cp attach_from_config_cli $(DESTDIR)/opt/xensource/libexec/
++	mkdir -p $(DESTDIR)/usr/bin
++	cp vcli $(DESTDIR)/usr/bin
++	cp attach_from_config_cli $(DESTDIR)/usr/bin
+ 
+-	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./extSR
+-	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./nfsSR
+-	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./lvmoiscsiSR
+-	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./lvmohbaSR
+-	cd $(DESTDIR)/var/xapi/sm/ &&	ln -s ../../../opt/xensource/libexec/attach_from_config_cli ./lvmSR
+ 
+ 

@@ -1,0 +1,5 @@
+vhdd (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Jon Ludlam <jonathan.ludlam@eu.citrix.com>  Mon, 11 Jul 2011 17:13:38 +0100
