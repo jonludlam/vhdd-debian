@@ -2,7 +2,7 @@ Source: vhdd
 Section: unknown
 Priority: extra
 Maintainer: Jon Ludlam <jonathan.ludlam@eu.citrix.com>
-Build-Depends: debhelper (>= 8.0.0), ocaml-nox, camlp4, camlp4-extra, xen-api-libs, ocaml-xapi-client, ocaml-findlib, libxmlm-ocaml-dev, libxen-dev , libtype-conv-camlp4-dev, uuid-dev, libdevmapper-dev, libxen-ocaml, libxen-ocaml-dev
+Build-Depends: debhelper (>= 8.0.0), ocaml-nox, camlp4, camlp4-extra, xen-api-libs, ocaml-xapi-client, ocaml-findlib, libxmlm-ocaml-dev, libxen-dev , libtype-conv-camlp4-dev, uuid-dev, libdevmapper-dev, libxen-ocaml, libxen-ocaml-dev, blktap-dev
 Standards-Version: 3.9.2
 Homepage: <insert the upstream URL, if relevant>
 #Vcs-Git: git://git.debian.org/collab-maint/vhdd.git
